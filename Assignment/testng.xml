@@ -1,0 +1,32 @@
+
+
+<suite name="Suite">
+<listeners>
+<listener class-name="test.java.com.assignment.base.WebdriverListener"></listener>
+<listener class-name="test.java.com.assignment.base.SuiteListener"></listener>
+</listeners>
+  
+    
+    <test name="Test1">
+       
+        <classes>
+
+            <class name="test.java.com.assignment.usecase.AddDocument" >  </class>
+
+        </classes>
+    </test>
+
+    <test name="Test2">
+
+        <classes>
+
+            <class name="test.java.com.assignment.usecase.EditDocument" >  </class>
+
+        </classes>
+    </test>
+    
+    </suite>
+
+
+
+

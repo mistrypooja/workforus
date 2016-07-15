@@ -1,0 +1,38 @@
+apply plugin: 'java'
+
+dependencies {
+   testCompile "org.seleniumhq.selenium:selenium-java:2.53.1" , "com.saucelabs:saucerest:1.0.27" , "org.testng:testng:6.9.4"
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    test {
+        java {
+            srcDir 'src'
+        }
+		
+		 resources {
+            srcDir 'lib'
+        }
+       
+    }
+}
+
+
+
+test {
+     useTestNG {
+          useDefaultListeners = true
+         outputDirectory = file("build//reports")
+          suites 'testng.xml'
+           reports.html.destination = file("build/gradle/test")
+     }
+ }
+
+
+
+

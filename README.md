@@ -1,4 +1,9 @@
 # workforus
+# Manual tests
+
+I have written and test plan and executed the tests as per the plan. I have recorded a video for every test that I performed and updated it in the “Actual Result” section of the spreadsheet.
+
+# Automated tests
 
 I have developed the asked automated tests using Selenium webdriver and testNG framework. The framework as is takes into account the requirement to run the tests on saucelabs. The way I have committed them, I have configured to run them locally. In order to run them on saucelabs, the config file needs to be updated.
 

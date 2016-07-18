@@ -1,4 +1,4 @@
-# workforus
+
 # Manual tests
 
 I have written and test plan and executed the tests as per the plan. I have recorded a video for every test that I performed and updated it in the “Actual Result” section of the spreadsheet.

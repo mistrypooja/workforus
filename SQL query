@@ -1,0 +1,8 @@
+select display_name as Contact_display_name, organization_name as Employer_organization_name, count(ca.case_id) as No_of_cases
+from civicrm_contact c,
+civicrm_case_contact cc,
+civicrm_case ca
+where c.id= cc.id
+and cc.case_id=ca.case_id
+and ca.end_date < getdate()
+group by display_name, organization_name
